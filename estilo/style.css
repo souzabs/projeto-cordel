@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family:Tangerine;
+    src: url(../fontes/Tangerine-Regular.ttf) format(truetype);
+    font-weight: normal;
+}
+
+@font-face{
+    font-family:Kaushan;
+    src: url(../fontes/KaushanScript-Regular.ttf) format(truetype);
+    font-weight: normal;
+}
+
+:root{
+    --fonte1: Times, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Tangerine', sans-serif;
+    --fonte3: 'Kaushan', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover  {
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 6vh;
+    line-height: 120%;
+    padding-left: 2%;
+    font-family: var(--fonte2);
+    font-size: 205%;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.538);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.367);
+    background-size: cover;
+   background-attachment: fixed;
+}
+
+section.imagem > p{
+   display: inline-block;
+   padding: 5px;
+   background-color: rgba(0, 0, 0, 0.479);
+   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.398);
+}
+
+section >p{
+    padding-bottom: 1.8em;
+}
+
+section#img01 {
+   background-image: url(../imagens/background001.jpg);
+   background-position: right center;
+   text-shadow: 2px 2px 0px black;
+}
+
+section#img02 {
+   background-image: url(../imagens/background002.jpg);
+   background-position: center right;
+   text-shadow: 2px 2px 0px black;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
